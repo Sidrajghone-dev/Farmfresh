@@ -1,0 +1,76 @@
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+
+.logo-container i {
+  font-size: medium;
+  color: wheat;
+  font-family: cursive;
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+  animation: logopulse 2s infinite ease-in-out;
+  border-radius: 50%;
+}
+
+.tractor-drive {
+  position: absolute;
+  top: 60x;
+  left: 280px; 
+  z-index: 10;
+  animation: driveTractor 10s ease-in-out infinite;
+}
+
+.tractor-img {
+  transform: scaleX(1);
+  width: 115px;
+}
+
+@keyframes driveTractor {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: 820px; 
+  }
+  
+}
+ 
+@keyframes logopulse{
+  0%, 100% {transform: scale(1);}
+  50%{ transform: scale(1.1);}
+}
+
+.logo {
+  font-size: 24px;  /* For tag line farm fresh */
+  color: white;
+  margin: 0;
+  display: inline-block;
+}
+
+.navbar {
+ 
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-size: cover;
+  background-position:  center 38%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  color:bisque;
+  text-decoration: none;
+  font-size: 110%;
+}

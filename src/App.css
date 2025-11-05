@@ -1,0 +1,540 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+
+.logo-container i {
+  font-size: medium;
+  color: wheat;
+  font-family: cursive;
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+  animation: logopulse 2s infinite ease-in-out;
+  border-radius: 50%;
+}
+
+.tractor-drive {
+  position: absolute;
+  top: 60x;
+  left: 280px; 
+  z-index: 10;
+  animation: driveTractor 10s ease-in-out infinite;
+}
+
+.tractor-img {
+  transform: scaleX(1);
+  width: 115px;
+}
+
+@keyframes driveTractor {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: 820px; 
+  }
+  
+}
+ 
+@keyframes logopulse{
+  0%, 100% {transform: scale(1);}
+  50%{ transform: scale(1.1);}
+}
+
+.logo {
+  font-size: 24px;  /* For tag line farm fresh */
+  color: white;
+  margin: 0;
+  display: inline-block;
+}
+
+.navbar {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('') center/cover;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-size: cover;
+  background-position: center 38%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.nav-links a {
+  margin: 0 10px;
+  color:bisque;
+  text-decoration: none;
+  font-size: 110%;
+}
+.hero {
+  padding: 20px;
+  text-align: center;
+  background-color: whitesmoke;
+  font-family: 'Times New Roman';
+  font-size: 160%;
+  font-style: italic;
+}
+#featured-products {
+  padding: 30px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+#featured-products h2 {
+  width: 100%;
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Individual product styling */
+.product {
+  background-color: rgba(255, 255, 255, 0.626);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+.product:hover {
+  transform: scale(1.03);
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.product p {
+  font-weight: bold;
+  margin: 0;
+  color: #444;
+}
+
+
+/* LOGIN AND REGISTER PAGE STYLE */
+
+.register-container, .login-container {
+  width: 350px;
+  margin: 50px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.login-form input:focus,
+.register-form input:focus {
+  outline: none;
+  border-color: #66bb6a;
+  box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+}
+
+.register-form h2,
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.register-form input,
+.login-form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-form button,
+.login-form button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-form button:hover,
+.login-form button:hover {
+  background-color: #45a049;
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.register-text a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #fdfdfd;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+.sell-container {
+  width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.sell-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sell-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sell-form p {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.sell-form input,
+.sell-form select,
+.sell-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.sell-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sell-form button:hover {
+  background-color: #45a049;
+}
+
+.farmers-section {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.farmers-section h2 {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+.farmer-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  padding: 20px;
+  width: 250px;
+}
+
+.farmer-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.footer {
+  text-align: center;
+  background: #eee;
+  padding: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .product {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .hero {
+    padding: 15px;
+  }
+
+  .product-detail, .contact-form, .register-form, .login-form {
+    padding: 10px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  form input, form textarea, form button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+}
+/* Wrapper with gradient background */
+.about-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0fff4, #e6f5e9);
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInDown 1.2s ease;
+}
+
+.about-logo {
+  width: 120px;
+  margin-bottom: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Content Cards */
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.about-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1.2s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.about-card h2 {
+  color: #388e3c;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.about-card p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-card ul {
+  padding-left: 20px;
+}
+
+.about-card li {
+  margin-bottom: 8px;
+  color: #333;
+  position: relative;
+}
+
+/* Custom bullet */
+.about-card li::before {
+  content: "✔";
+  color: #2e7d32;
+  position: absolute;
+  left: -20px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

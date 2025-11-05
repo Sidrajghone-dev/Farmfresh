@@ -1,0 +1,89 @@
+
+.footer {
+  background: #2e7d32;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 50px; /* optional, can remove if sticky layout handles spacing */
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: left;
+}
+
+/* Footer logo */
+.footer-logo img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* Links */
+.footer-links a {
+  display: block;
+  color: #dcedc8;
+  margin: 5px 0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff176;
+}
+
+/* Newsletter */
+.footer-newsletter input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.footer-newsletter button {
+  padding: 8px 12px;
+  border: none;
+  background: #ffeb3b;
+  color: #2e7d32;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+  background: #fdd835;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #4caf50;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+/* ===== Mobile Responsiveness ===== */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-newsletter input {
+    margin-bottom: 10px;
+    width: 80%;
+  }
+
+  .footer-newsletter button {
+    width: 80%;
+  }
+}
